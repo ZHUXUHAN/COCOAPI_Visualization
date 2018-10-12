@@ -146,6 +146,7 @@ class Voc_To_Coco():
         height=size[0].findall('height')[0].text
         width=size[0].findall('width')[0].text
         id=0
+        image_id=0
         image = {'height': float(height), 'width': float(width), 'id': id, 'file_name': filename+'.jpg'}
         self.images.append(image)
         #categories
@@ -176,11 +177,13 @@ class Voc_To_Coco():
             print("self.points", self.keypoints)
             print(i)
 
-            annotation = {'segmentation': [], 'iscrowd': 0, 'area': area, 'image_id': id,
+            annotation = {'segmentation': [], 'iscrowd': 0, 'area': area, 'image_id': image_id,
                           'bbox': bbox,
                           'category_id': 1, 'id': id,'keypoints':self.keypoints[i]}
             self.annotations.append(annotation)
             id+=1
+
+
 
     def processing_points(self,points,vis):
         s=[]
@@ -211,7 +214,7 @@ class Voc_To_Coco():
         data_coco = {'images': self.images, 'categories': self.categories, 'annotations': self.annotations}
         json.dump(data_coco, open(self._save_json_path, 'w'))
 
-vv=Voc_To_Coco('E:/Annotation/person/3_point.xml','E:/Priv-lab1-2018-9-17-master/3_point.json')
+vv=Voc_To_Coco('./3_point.xml','./3_point.json')
 vv.processing_xml()
 vv.save_json()
 
