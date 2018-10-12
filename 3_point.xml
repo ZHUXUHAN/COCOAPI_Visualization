@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>person</folder>
+  <filename>3</filename>
+  <path>E:\person\3.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>853</width>
+    <height>1280</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <shape_type>RECT</shape_type>
+  <object>
+    <name>3</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>61</xmin>
+      <ymin>181</ymin>
+      <xmax>390</xmax>
+      <ymax>1226</ymax>
+    </bndbox>
+  <point><keypoints>[203, 281, 190, 259, 257, 262, 176, 278, 250, 287, 97, 359, 0, 0, 108, 517, 302, 526, 267, 557, 202, 518, 177, 751, 275, 739, 192, 919, 270, 931, 176, 1068, 249, 1079]</keypoints><visible>[1, 2, 2, 2, 2, 2, 0, 2, 2, 1, 2, 1, 1, 1, 1, 2, 2]</visible></point></object>
+  <object>
+    <name>4</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>444</xmin>
+      <ymin>153</ymin>
+      <xmax>791</xmax>
+      <ymax>1224</ymax>
+    </bndbox>
+  <point><keypoints>[614, 306, 591, 286, 630, 276, 574, 307, 633, 308, 529, 388, 729, 405, 490, 531, 712, 535, 645, 550, 597, 483, 579, 682, 661, 693, 566, 860, 642, 879, 553, 979, 672, 997]</keypoints><visible>[1, 2, 2, 2, 2, 1, 1, 1, 2, 1, 2, 2, 2, 1, 1, 2, 2]</visible></point></object>
+</annotation>
